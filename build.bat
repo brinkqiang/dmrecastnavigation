@@ -1,4 +1,7 @@
 
+rem vcpkg install opengl:x64-windows-static
+rem vcpkg install sdl2:x64-windows-static
+
 rmdir /S /Q build
 mkdir build
 pushd build
