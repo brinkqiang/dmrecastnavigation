@@ -1,7 +1,9 @@
 #include "catch.hpp"
 
 #include "DetourCommon.h"
-
+#ifdef WIN32
+#pragma comment(lib, "winmm.lib")
+#endif
 TEST_CASE("dtRandomPointInConvexPoly")
 {
 	SECTION("Properly works when the argument 's' is 1.0f")
