@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.0)
 
 project(RecastNavigation)
 
+LIST(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+INCLUDE(cmake/ModuleImport.cmake)
+INCLUDE(cmake/ModuleCompileOptions.cmake)
+ModuleSetCompileOptions()
+
 # lib versions
 SET(SOVERSION 1)
 set(LIB_VERSION 1.5.1)
