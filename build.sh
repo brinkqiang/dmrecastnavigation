@@ -3,6 +3,9 @@
 echo vcpkg install opengl:x64-linux
 echo vcpkg install sdl2:x64-linux
 
+echo sudo yum install mesa-libGL-devel
+echo sudo yum install freeglut-devel
+
 rm -rf build
 mkdir build
 pushd build
