@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.11)
-IF(WIN32)
-SET(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/../dmvcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake")
-ENDIF(WIN32)
+
 project(RecastNavigation)
 
 LIST(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
